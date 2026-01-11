@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - LightUp Africa</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-sun"></i>
+                    <span>LightUp Africa</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="news.html">News & Insights</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+                <button class="quote-btn" onclick="window.location.href='quote.html'">Get A Quote</button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="projects-hero-content">
+                <h1>Powering Africa's <span class="yellow-text">Solar Revolution</span></h1>
+                <p>Empower your communities with sustainable energy solutions</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="stat-number">129+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">2.17M</div>
+                        <div class="stat-label">MWh Generated</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">44,000+</div>
+                        <div class="stat-label">Homes Powered</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories">
+        <div class="container">
+            <h2 class="section-title">Our Success Stories</h2>
+            <p class="section-subtitle">Browse through some of our successful projects and see what we've done.</p>
+            
+            <div class="project-filters">
+                <button class="project-filter active">All Projects</button>
+                <button class="project-filter">Residential</button>
+                <button class="project-filter">Commercial</button>
+                <button class="project-filter">Rural Electrification</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card-new">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-city"></i>
+                            <p>Industrial Complex</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Lagos Industrial Complex</h3>
+                        <p>120 MW of solar PV installed, powering manufacturing facilities.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">250 kWh</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">120 Homes</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">490 CO2</span>
+                            </div>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card-new">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-school"></i>
+                            <p>Village School</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Maasai Village School</h3>
+                        <p>Solar power bringing electricity to schools, improving education.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">15 kWh</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">30 Homes</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">200 CO2</span>
+                            </div>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card-new">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-home"></i>
+                            <p>Suburban Homes</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Johannesburg Suburb</h3>
+                        <p>175 homes equipped with integrated solar solutions.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">200 kWh</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">175 Homes</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">600 CO2</span>
+                            </div>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card-new">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-solar-panel"></i>
+                            <p>Solar Farm</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Atlas Solar Farm</h3>
+                        <p>50 MW of PV power, providing clean energy to the grid.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">10,000 kWh</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">25,000 Homes</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">10,000 CO2</span>
+                            </div>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card-new">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-tint"></i>
+                            <p>Water Project</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Ghana Water Project</h3>
+                        <p>Solar-powered water pump for local communities.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">10 kWh</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">1,500 People</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">100% Access</span>
+                            </div>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card-new">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-hospital"></i>
+                            <p>Medical Center</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Nairobi Medical Center</h3>
+                        <p>200 kW solar array, providing reliable power for the hospital.</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">5,000 kWh</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">5,000 Patients</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">18,000 CO2</span>
+                            </div>
+                        </div>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collective Impact Section -->
+    <section class="collective-impact">
+        <div class="container">
+            <h2 class="section-title white">Our Collective Impact</h2>
+            <p class="section-subtitle white">Together, these projects represent our successful endeavor across Africa.</p>
+            <div class="impact-stats">
+                <div class="impact-stat">
+                    <div class="impact-number">250+</div>
+                    <div class="impact-label">MW Installed</div>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-number">150K</div>
+                    <div class="impact-label">Tons CO2 Saved</div>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-number">85K</div>
+                    <div class="impact-label">Families Powered</div>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-number">12</div>
+                    <div class="impact-label">Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready to Power Your Future Section -->
+    <section class="power-future">
+        <div class="container">
+            <div class="power-future-content">
+                <h2>Ready to Power Your Future?</h2>
+                <p>Join the solar revolution and illuminate your next success story.</p>
+                <div class="cta-buttons">
+                    <button class="cta-btn-primary">Start New Project</button>
+                    <button class="cta-btn-secondary">Download Portfolio</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-sun"></i>
+                        <span>LightUp Africa</span>
+                    </div>
+                    <p>Powering Africa with sustainable solar solutions.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Residential</a></li>
+                        <li><a href="#">Commercial</a></li>
+                        <li><a href="#">Industrial</a></li>
+                        <li><a href="#">Rural Electrification</a></li>
+                        <li><a href="news.html">Blog Page</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@lightupafrica.com</li>
+                        <li><i class="fas fa-phone"></i> +254 701 123 456</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LightUp Africa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Project filters functionality
+        const projectFilters = document.querySelectorAll('.project-filter');
+        projectFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                projectFilters.forEach(f => f.classList.remove('active'));
+                filter.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
+

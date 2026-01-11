@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LightUp Africa</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-sun"></i>
+                    <span>LightUp Africa</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="news.html">News & Insights</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+                <button class="quote-btn" onclick="window.location.href='quote.html'">Get A Quote</button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>Contact <span class="yellow-text">Us</span></h1>
+                <p>We're happy to help you. Tell us about your challenge and let's build a more sustainable future with renewable energy experts.</p>
+                <div class="hero-contact-hint">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Get in touch with us</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Left Column - Get In Touch -->
+                <div class="contact-left">
+                    <h2>Get In Touch</h2>
+                    <p class="intro-text">You need to know us better, but we are happy to answer all your questions. We are here to help you. Reach out to us.</p>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="card-border yellow"></div>
+                            <div class="card-icon green">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Headquarters</h3>
+                                <div class="card-details">
+                                    <p>LightUp Africa Energy Co.</p>
+                                    <p>New York Business</p>
+                                    <p>Parklands Road, 00100</p>
+                                    <p>Nairobi, Kenya</p>
+                                    <p>South Africa</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-border blue"></div>
+                            <div class="card-icon blue">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Phone Support</h3>
+                                <div class="card-details">
+                                    <p>+254 700 000 000</p>
+                                    <p>Company Support: +254 700 000 000</p>
+                                    <p>Email: info@lightupafrica.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-border green"></div>
+                            <div class="card-icon green">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Email Contact</h3>
+                                <div class="card-details">
+                                    <p>Sales: sales@lightupafrica.com</p>
+                                    <p>Support: support@lightupafrica.com</p>
+                                    <p>General: info@lightupafrica.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="#" class="social-square green">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-square blue">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-square yellow">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column - Send Us a Message -->
+                <div class="contact-right">
+                    <h2>Send Us a Message</h2>
+                    <p class="intro-text">Fill in the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Your Name *</label>
+                                <input type="text" id="firstName" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">&nbsp;</label>
+                                <input type="text" id="lastName" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" placeholder="Enter your subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" rows="6" placeholder="Enter your message" required></textarea>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">I agree to the terms and conditions</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-sun"></i>
+                        <span>LightUp Africa</span>
+                    </div>
+                    <p>Empowering Africa with sustainable and affordable energy solutions.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Residential Solar</a></li>
+                        <li><a href="#">Commercial Solar</a></li>
+                        <li><a href="#">Industrial Solar</a></li>
+                        <li><a href="#">Mini-Grids</a></li>
+                        <li><a href="#">Off-Grid Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> 254 700 000 000</li>
+                        <li><i class="fas fa-envelope"></i> info@lightupafrica.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, South Africa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LightUp Africa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get A Quote - LightUp Africa</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-sun"></i>
+                    <span>LightUp Africa</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="news.html">News & Insights</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+                <button class="quote-btn" onclick="window.location.href='quote.html'">Get A Quote</button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="quote-hero">
+        <div class="container">
+            <div class="quote-hero-content">
+                <div class="quote-hero-text">
+                    <h1>Ready to Power Your <span class="yellow-text">Future?</span></h1>
+                    <p>Get a free, customized solar energy system tailored to your unique project. Expert equipment, zero obligation, and accessible financing options available.</p>
+                    <div class="hero-buttons">
+                        <button class="hero-btn-primary" onclick="document.getElementById('quote-form').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                        <button class="hero-btn-secondary">Learn More</button>
+                    </div>
+                </div>
+                <div class="quote-hero-image">
+                    <div class="image-placeholder-quote">
+                        <i class="fas fa-solar-panel"></i>
+                        <p>Solar Installation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section class="quote-main">
+        <div class="container">
+            <div class="quote-content">
+                <!-- Left Column - Why Choose -->
+                <div class="quote-left">
+                    <h2>Why Choose LightUp Africa?</h2>
+                    <div class="why-choose-features">
+                        <div class="why-feature-card">
+                            <div class="why-icon yellow">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="why-content">
+                                <h3>Robust Guarantee</h3>
+                                <p>LightUp Africa offers robust quality assurance and guarantees to ensure your peace of mind.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-feature-card">
+                            <div class="why-icon teal">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="why-content">
+                                <h3>Flexible Financing</h3>
+                                <p>We provide flexible financing options tailored to your budget and needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-feature-card">
+                            <div class="why-icon blue">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="why-content">
+                                <h3>Local Expertise</h3>
+                                <p>Our team of local experts understands regional regulations and environmental factors.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-feature-card">
+                            <div class="why-icon purple">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="why-content">
+                                <h3>24-Hour Warranty</h3>
+                                <p>Complete peace of mind with our comprehensive 24-hour warranty on all our products.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inquire-section">
+                        <p>Inquire by WhatsApp/Email</p>
+                        <div class="inquire-links">
+                            <a href="#" class="inquire-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>Get in touch</span>
+                            </a>
+                            <a href="contact.html" class="inquire-link email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Get in touch</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Quote Form -->
+                <div class="quote-right">
+                    <h2>Get Your Free Quote</h2>
+                    <p class="form-intro">Fill out the form below to get a free, no-obligation quote for your solar energy system.</p>
+                    
+                    <form class="quote-form" id="quote-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="address">Address/Region *</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType">Project Type *</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="">Select Project Type</option>
+                                    <option value="residential">Residential</option>
+                                    <option value="commercial">Commercial</option>
+                                    <option value="industrial">Industrial</option>
+                                    <option value="rural">Rural Electrification</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="location">Project Location *</label>
+                                <input type="text" id="location" name="location" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City/Country</label>
+                                <input type="text" id="city" name="city">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Project Description</label>
+                            <textarea id="description" name="description" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I agree to the <a href="#">LightUp Africa Privacy Policy</a>.</label>
+                        </div>
+
+                        <button type="submit" class="quote-submit-btn">Get My Free Quote</button>
+
+                        <p class="form-disclaimer">By clicking 'Get My Free Quote', you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-sun"></i>
+                        <span>LightUp Africa</span>
+                    </div>
+                    <p>Powering Africa with sustainable solar solutions.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Residential Solar</a></li>
+                        <li><a href="#">Commercial Solar</a></li>
+                        <li><a href="#">Industrial Solar</a></li>
+                        <li><a href="#">Solar Installation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +254 701 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@lightupafrica.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LightUp Africa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quote.js"></script>
+</body>
+</html>
+
