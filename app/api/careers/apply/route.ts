@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
       // Save file to Vercel Blob (serverless-friendly)
       const filename = `resumes/${Date.now()}-${resume.name}`
       const uploadResult = await put(filename, resume, {
-        access: 'private',
+        access: 'public', // Vercel Blob server-side requires public access option here
       })
       savedResumeUrl = uploadResult.url
     }
