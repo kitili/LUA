@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { mkdir, writeFile } from 'fs/promises'
-import { join } from 'path'
 import { query } from '@/lib/db'
+import { put } from '@vercel/blob'
 
 export async function POST(request: NextRequest) {
   try {
@@ -29,7 +28,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    let savedResumePath: string | null = null
+    let savedResumeUrl: string | null = null
 
     // Validate file if provided
     if (resume && resume.size > 0) {
@@ -49,14 +48,12 @@ export async function POST(request: NextRequest) {
         )
       }
 
-      // Save file to local storage
-      const bytes = await resume.arrayBuffer()
-      const buffer = Buffer.from(bytes)
-      const uploadDir = join(process.cwd(), 'uploads', 'resumes')
-      await mkdir(uploadDir, { recursive: true })
-      const filename = `${Date.now()}-${resume.name}`
-      savedResumePath = join(uploadDir, filename)
-      await writeFile(savedResumePath, buffer)
+      // Save file to Vercel Blob (serverless-friendly)
+      const filename = `resumes/${Date.now()}-${resume.name}`
+      const uploadResult = await put(filename, resume, {
+        access: 'private',
+      })
+      savedResumeUrl = uploadResult.url
     }
 
     // Save to database
@@ -64,7 +61,7 @@ export async function POST(request: NextRequest) {
       `INSERT INTO career_applications 
         (name, email, area_of_interest, resume_path) 
        VALUES ($1, $2, $3, $4)`,
-      [name, email, areaOfInterest, savedResumePath]
+      [name, email, areaOfInterest, savedResumeUrl]
     )
 
     // TODO: Send email notification

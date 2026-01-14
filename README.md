@@ -53,3 +53,21 @@ npm run build
 npm start
 ```
 
+## Deploying to Vercel
+
+1) Set environment variables in Vercel (Project Settings → Environment Variables):
+   - `DATABASE_URL`: Postgres connection string (Vercel Postgres or your own).
+   - `BLOB_READ_WRITE_TOKEN`: Vercel Blob token for resume uploads.
+2) Import the repo into Vercel. Defaults are fine:
+   - Build command: `npm run build`
+   - Output directory: `.next`
+3) Deploy. The API routes (`/api/contact`, `/api/quote`, `/api/careers/apply`) require the database to be reachable with the credentials in `DATABASE_URL`.
+4) Optional: run `npm run build` locally before deploying to catch issues early.
+
+### Local development env
+Create a `.env.local` file with:
+```
+DATABASE_URL=postgres://USER:PASSWORD@HOST:PORT/DBNAME
+BLOB_READ_WRITE_TOKEN=your-vercel-blob-token
+```
+
